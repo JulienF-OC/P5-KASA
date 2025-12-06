@@ -1,0 +1,33 @@
+.Banner {
+  display: flex;
+  justify-content: center;
+  margin: 65px auto 0 auto;
+  width: 1240px;
+  height: 223px;
+  background-image: url("/banner.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 25px;
+  position: relative;
+}
+
+.Banner h2 {
+  display: flex;
+  align-items: center;
+  font-size: 48px;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  position: relative;
+  z-index: 2;
+}
+
+.Banner:before {
+  content: "";
+  opacity: 0.75;
+  inset: 0;
+  position: absolute;
+  z-index: 1;
+  background: black;
+  border-radius: 25px;
+}
