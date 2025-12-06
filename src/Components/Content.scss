@@ -1,0 +1,29 @@
+.container {
+  width: 1240px;
+  height: 830px;
+  margin: 100px auto;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #f6f6f6;
+  border-radius: 25px;
+  gap: 60px;
+  padding: 50px;
+}
+
+.card {
+  width: 340px;
+  height: 340px;
+  border-radius: 10px;
+  background-color: #ff6060;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card img {
+  width: 100%;
+}
