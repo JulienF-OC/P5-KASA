@@ -8,13 +8,8 @@ function Content() {
       <div className="cards">
         {apartments.map((apt) => (
           <div className="card" key={apt.id}>
-            <div className="card-image">
-              <img src={apt.cover} alt={apt.title} />
-            </div>
-            <div className="card-content">
-              <h3>{apt.title}</h3>
-              <p>{apt.location}</p>
-            </div>
+            <img src={apt.cover} alt={apt.title} />
+            <h3 className="card-title">{apt.title}</h3>
           </div>
         ))}
       </div>
