@@ -6,7 +6,7 @@
 .cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start; /* IMPORTANT pour aligner la dernière ligne à gauche */
+  justify-content: flex-start;
   gap: 60px;
   padding: 50px;
   background-color: #f6f6f6;
