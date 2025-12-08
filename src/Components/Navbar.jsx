@@ -11,9 +11,9 @@ function Navbar() {
       <Link to="/" className="accueil active">
         Accueil
       </Link>
-      <a href="./A-propos.html" className="a-propos">
+      <Link to="/apropos" className="a-propos">
         A Propos
-      </a>
+      </Link>
     </nav>
   );
 }
