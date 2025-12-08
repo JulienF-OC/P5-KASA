@@ -1,5 +1,6 @@
 import React from "react";
 import "./Navbar.scss";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
@@ -7,9 +8,9 @@ function Navbar() {
       <div className="navbar_logo">
         <img src="/logo.png" alt="Logo" />
       </div>
-      <a href="./index.html" className="accueil active">
+      <Link to="/" className="accueil active">
         Accueil
-      </a>
+      </Link>
       <a href="./A-propos.html" className="a-propos">
         A Propos
       </a>

@@ -31,3 +31,31 @@
   background: black;
   border-radius: 25px;
 }
+
+@media screen and (max-width: 375px) {
+  .Banner {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 345px;
+    height: 111px;
+    background-image: url("/banner.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
+    position: relative;
+    justify-content: flex-start;
+  }
+  .Banner h2 {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+    position: relative;
+    z-index: 2;
+    width: 225px;
+    margin-left: 15px;
+  }
+}
