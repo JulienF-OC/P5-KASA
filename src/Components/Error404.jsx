@@ -7,7 +7,8 @@ function Error404() {
     <div className="error-content">
       <span className="error-nbr">404</span>
       <span className="error-msg">
-        Oups ! La page que vous demandez n'existe pas !
+        Oups ! La page que <br className="mobile-break" /> vous demandez
+        n'existe pas !
       </span>
       <Link to="/" className="home-page">
         Retourner sur la page d'accueil
