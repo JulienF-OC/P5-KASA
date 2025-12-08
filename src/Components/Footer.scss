@@ -8,18 +8,18 @@
   background-color: black;
   padding: 20px;
   color: #fff;
-}
 
-.footer_logo img {
-  display: block;
-  width: 122px;
-  height: auto;
-  margin-bottom: 15px;
-}
+  &_logo img {
+    display: block;
+    width: 122px;
+    height: auto;
+    margin-bottom: 15px;
+  }
 
-.footer h2 {
-  font-size: 24px;
-  font-weight: 500;
-  margin: 0;
-  font-family: "Montserrat", sans-serif;
+  h2 {
+    font-size: 24px;
+    font-weight: 500;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+  }
 }
