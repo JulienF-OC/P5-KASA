@@ -1,6 +1,7 @@
 import React from "react";
 import "./Navbar.scss";
 import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function Navbar() {
   return (
@@ -8,12 +9,16 @@ function Navbar() {
       <div className="navbar_logo">
         <img src="/logo.png" alt="Logo" />
       </div>
-      <Link to="/" className="accueil active">
+      <NavLink to="/" className={({ isActive }) => (isActive ? "active" : "")}>
         Accueil
-      </Link>
-      <Link to="/apropos" className="a-propos">
+      </NavLink>
+
+      <NavLink
+        to="/apropos"
+        className={({ isActive }) => (isActive ? "active" : "")}
+      >
         A Propos
-      </Link>
+      </NavLink>
     </nav>
   );
 }
