@@ -26,7 +26,7 @@ function App() {
         />
 
         {/* PAGE À PROPOS */}
-        <Route path="/a-propos" element={<Apropos />} />
+        <Route path="/apropos" element={<Apropos />} />
 
         {/* PAGE LOGEMENT */}
         <Route path="/logement/:id" element={<Logement />} />

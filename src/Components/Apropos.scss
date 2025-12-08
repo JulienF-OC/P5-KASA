@@ -1,0 +1,53 @@
+.banniere-apropos {
+  width: 1240px;
+  margin: 50px auto;
+}
+
+.banniere-apropos img {
+  width: 1240px;
+  height: 223px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.apropos-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.collapse-apropos {
+  margin-top: 20px;
+  border-radius: 5px;
+  width: 1023px;
+  background: #fbfbfb;
+  margin: 0 0 20px 0;
+}
+
+@media screen and (max-width: 375px) {
+  .banniere-apropos {
+    width: 335px;
+    margin: 0 auto 10px auto;
+  }
+  .banniere-apropos img {
+    width: 335px;
+    height: 111px;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+  .apropos-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 335px;
+  }
+  .collapse-apropos {
+    margin-top: 20px;
+    border-radius: 5px;
+    width: 335px;
+    background: #fbfbfb;
+    margin: 0 0 20px 24px;
+  }
+}
