@@ -3,7 +3,6 @@ import { useParams, Navigate } from "react-router-dom";
 import apartments from "../data/logements.json";
 import "./Logement.scss";
 
-// Composant Collapse minimal
 function Collapse({ title, content }) {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -18,7 +17,6 @@ function Collapse({ title, content }) {
   );
 }
 
-// Composant Carrousel minimal
 function Carousel({ pictures }) {
   const [current, setCurrent] = useState(0);
 
@@ -52,7 +50,6 @@ function Logement() {
   const { id } = useParams();
   const logement = apartments.find((apt) => apt.id === id);
 
-  // Si logement introuvable, redirige vers 404
   if (!logement) return <Navigate to="/404" />;
 
   return (

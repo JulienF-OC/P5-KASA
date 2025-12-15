@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
 
-  &-nbr {
+  .error-nbr {
     font-size: 288px;
     color: #ff6060;
     font-weight: 700;
@@ -10,7 +10,7 @@
     align-self: center;
   }
 
-  &-msg {
+  .error-msg {
     align-self: center;
     margin-bottom: 60px;
     color: #ff6060;
@@ -39,11 +39,11 @@
   @media screen and (max-width: 375px) {
     margin-top: 70px;
 
-    &-nbr {
+    .error-nbr {
       font-size: 96px;
     }
 
-    &-msg {
+    .error-msg {
       font-size: 18px;
       text-align: center;
     }
