@@ -1,12 +1,12 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import Navbar from "./Components/Navbar";
-import Banner from "./Components/Banner";
-import Content from "./Components/Content";
-import Footer from "./Components/Footer";
-import Apropos from "./Components/Apropos";
-import Logement from "./Components/Logement";
-import Error404 from "./Components/Error404";
+import Navbar from "./Components/Layout/Navbar";
+import Banner from "./Components/Common/Banner";
+import Content from "./Components/Features/Logements/Content";
+import Footer from "./Components/Layout/Footer";
+import Apropos from "./Pages/Apropos";
+import Logement from "./Components/Features/Logements/Logement";
+import Error404 from "./Pages/Error404";
 
 function App() {
   return (

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useParams, Navigate } from "react-router-dom";
-import apartments from "../data/logements.json";
+import apartments from "../../../data/logements.json";
 import "./Logement.scss";
 
 function Collapse({ title, content }) {

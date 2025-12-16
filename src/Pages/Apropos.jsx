@@ -1,6 +1,6 @@
 import React from "react";
 import "./Apropos.scss";
-import Collapse from "./Collapse.jsx";
+import Collapse from "../Components/Common/Collapse.jsx";
 import data from "../data/apropos.json";
 
 function Apropos() {
