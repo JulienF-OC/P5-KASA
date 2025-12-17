@@ -1,0 +1,14 @@
+.gallery-container {
+  width: 1240px;
+  margin: 100px auto;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 60px;
+  padding: 50px;
+  background-color: #f6f6f6;
+  border-radius: 25px;
+}

@@ -1,4 +1,5 @@
 import React, { useState, useRef } from "react";
+import "../../Styles/Collapse.scss";
 
 function Collapse({ title, content }) {
   const [isOpen, setIsOpen] = useState(false);

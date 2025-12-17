@@ -1,0 +1,19 @@
+.rating {
+  display: flex;
+  gap: 5px;
+  margin-top: 40px;
+
+  .star {
+    display: inline-block;
+    width: auto;
+    height: 36px;
+    font-size: 28px;
+    line-height: 36px;
+    text-align: center;
+    color: lightgray;
+
+    &.filled {
+      color: #ff6060;
+    }
+  }
+}

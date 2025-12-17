@@ -1,11 +1,12 @@
 import React from "react";
 import "../../Styles/Footer.scss";
+import logoWhite from "../../assets/images/logo_white.png";
 
 function Footer() {
   return (
     <div className="footer">
       <div className="footer_logo">
-        <img src="/logo_white.png" alt="logo Kasa" />
+        <img src={logoWhite} alt="logo Kasa" />
       </div>
       <div className="footer_text">
         <h2>

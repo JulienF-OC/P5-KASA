@@ -1,0 +1,52 @@
+.logement-collapse {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 1240px;
+  gap: 76px;
+  margin: 0 auto 40px;
+}
+
+.collapse {
+  margin-top: 20px;
+  border-radius: 5px;
+  width: 582px;
+  background: #fbfbfb;
+  margin-bottom: 20px;
+
+  &-header {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    background: #ff6060;
+    color: #fff;
+    border-radius: 10px;
+    height: 52px;
+    line-height: 0.9;
+
+    h3 {
+      margin-left: 15px;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 700;
+      font-size: 18px;
+    }
+
+    span {
+      align-self: center;
+      margin-right: 10px;
+    }
+  }
+
+  &-content {
+    padding: 10px;
+  }
+}
+
+.collapse-apropos {
+  margin-top: 20px;
+  border-radius: 5px;
+  width: 1023px;
+  background: #fbfbfb;
+  margin-bottom: 20px;
+  margin: 30px auto;
+}
