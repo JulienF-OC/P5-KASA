@@ -2,12 +2,13 @@ import React from "react";
 import "../../Styles/Navbar.scss";
 import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
+import logo from "../../assets/images/logo.png";
 
 function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar_logo">
-        <img src="/logo.png" alt="Logo" />
+        <img src={logo} alt="Logo" />
       </div>
       <NavLink to="/" className={({ isActive }) => (isActive ? "active" : "")}>
         Accueil
