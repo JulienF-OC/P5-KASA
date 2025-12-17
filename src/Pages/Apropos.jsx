@@ -1,16 +1,16 @@
 import React from "react";
-import "./Apropos.scss";
-import Collapse from "../Components/Common/Collapse.jsx";
+import "../Styles/Apropos.scss";
+import Banner from "../Components/Common/Banner";
+import Collapse from "../Components/Common/Collapse";
 import data from "../data/apropos.json";
+import bannerImage from "../assets/images/banner-apropos.jpg";
 
-function Apropos() {
+function About() {
   return (
-    <div>
-      <div className="banniere-apropos">
-        <img src="/banner-apropos.jpg" alt="banniere a propos" />
-      </div>
+    <div className="about">
+      <Banner image={bannerImage} />
 
-      <div className="apropos-container">
+      <div className="about-container">
         {data.map((item, index) => (
           <Collapse key={index} title={item.title} content={item.content} />
         ))}
@@ -19,4 +19,4 @@ function Apropos() {
   );
 }
 
-export default Apropos;
+export default About;

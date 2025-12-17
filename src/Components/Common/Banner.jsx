@@ -1,5 +1,5 @@
 import React from "react";
-import "./Styles/Banner.scss";
+import "../../Styles/Banner.scss";
 
 function Banner({ image, text, showOverlay = true }) {
   return (
