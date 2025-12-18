@@ -10,7 +10,7 @@ function Collapse({ title, content }) {
   };
 
   return (
-    <div className="collapse-apropos">
+    <div className="collapse-container">
       <div className="collapse-header" onClick={toggle}>
         <h3>{title}</h3>
         <span>{isOpen ? "▲" : "▼"}</span>

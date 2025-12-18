@@ -12,3 +12,20 @@
   background-color: #f6f6f6;
   border-radius: 25px;
 }
+
+@media screen and (max-width: 375px) {
+  .gallery-container {
+    width: 335px;
+    margin: -20px 12px;
+  }
+
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 20px;
+    padding: 50px;
+    background-color: #fff;
+    border-radius: 25px;
+  }
+}

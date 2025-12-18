@@ -190,21 +190,24 @@
   .logement-header {
     flex-direction: column;
     margin-top: 20px;
+    margin-left: 15px;
   }
 
   .logement-info {
-    h1 {
-      font-size: 18px;
-      margin: 0;
-      width: 335px;
-    }
-
-    p {
-      margin: 5px 0;
-      font-size: 14px;
-      width: 223px;
-    }
+  margin-top: -15px;
+  
+  h1 {
+    font-size: 18px;
+    margin: 0;
+    width: 335px;
   }
+  
+  p {
+    margin: 5px 0;
+    font-size: 14px;
+    width: 223px;
+  }
+}
 
   .logement-tags {
     margin: 20px 0 0;

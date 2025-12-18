@@ -11,3 +11,13 @@
   font-size: 14px;
   font-weight: 700;
 }
+
+@media screen and (max-width: 375px) {
+  .logement-tags {
+    margin: 20px 0 0;
+
+    .tag {
+      font-size: 10px;
+    }
+  }
+}

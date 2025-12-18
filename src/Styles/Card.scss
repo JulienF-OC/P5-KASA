@@ -25,3 +25,15 @@
   text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
   font-family: "Montserrat", sans-serif;
 }
+
+@media screen and (max-width: 375px) {
+  .card {
+    position: relative;
+    width: 335px;
+    height: 255px;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    margin-left: -50px;
+  }
+}

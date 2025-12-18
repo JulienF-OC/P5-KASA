@@ -13,6 +13,7 @@
   width: 167px;
   gap: 7px;
 }
+
 .logement-info {
   h1 {
     color: #ff6060;
@@ -22,7 +23,6 @@
     font-weight: 500;
     width: 635px;
   }
-
   p {
     margin: 5px 0 0 315px;
     font-weight: 500;
@@ -57,4 +57,53 @@ p {
   font-size: 18px;
   color: #ff6060;
   font-family: "Montserrat", sans-serif;
+}
+
+@media screen and (max-width: 375px) {
+  .logement-header {
+    flex-direction: column;
+    margin-top: 20px;
+    margin-right: 0;
+    margin-left: 15px;
+  }
+
+  .logement-info {
+    margin-top: -15px;
+    h1 {
+      font-size: 18px;
+      margin: 0;
+      width: 335px;
+    }
+    p {
+      margin: 5px 0;
+      font-size: 14px;
+      width: 223px;
+    }
+  }
+
+  .logement-host {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 15px 0 0 0;
+  }
+
+  .host {
+    width: auto;
+    align-items: flex-start;
+  }
+
+  .host-name {
+    font-size: 12px;
+    width: 60px;
+  }
+
+  .host-picture {
+    width: 32px;
+    height: 32px;
+    margin-right: 11px;
+    margin-top: 10px;
+  }
 }

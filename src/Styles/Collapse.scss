@@ -42,11 +42,47 @@
   }
 }
 
-.collapse-apropos {
+.collapse-container {
   margin-top: 20px;
   border-radius: 5px;
   width: 1023px;
   background: #fbfbfb;
   margin-bottom: 20px;
   margin: 30px auto;
+}
+
+@media screen and (max-width: 375px) {
+  .logement-collapse {
+    flex-direction: column;
+    width: 335px;
+    margin: 0 auto;
+    gap: 0;
+    margin-bottom: 10px;
+  }
+
+  .collapse-container {
+    width: 335px;
+    margin-top: 10px;
+
+    .collapse-header {
+      padding: 5px;
+      height: 20px;
+      margin-bottom: -15px;
+
+      h3 {
+        font-size: 13px;
+        margin-left: 0;
+        align-self: center;
+      }
+
+      span {
+        font-size: 16px;
+      }
+    }
+
+    .collapse-content {
+      font-size: 12px;
+      padding: 15px 10px;
+    }
+  }
 }

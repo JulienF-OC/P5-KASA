@@ -2,3 +2,10 @@
   width: 1240px;
   margin: 60px auto;
 }
+
+@media screen and (max-width: 375px) {
+  .home {
+    width: 375px;
+    margin: 0 auto;
+  }
+}

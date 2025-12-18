@@ -8,38 +8,52 @@
     object-fit: cover;
     border-radius: 20px;
   }
-
-  @media screen and (max-width: 375px) {
-    width: 335px;
-    margin: 0 auto 10px;
-
-    img {
-      width: 335px;
-      height: 111px;
-    }
-  }
-}
+} // ← Accolade manquante !
 
 .apropos-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 20px;
+} // ← Accolade manquante !
 
-  @media screen and (max-width: 375px) {
-    width: 335px;
+@media screen and (max-width: 375px) {
+  .about {
+    width: 100%;
+    padding: 0;
+    margin-top: 0;
+
+    img {
+      width: 335px;
+      height: 111px;
+      border-radius: 10px;
+    }
   }
-}
 
-.collapse-apropos {
-  margin-top: 20px;
-  border-radius: 5px;
-  width: 1023px;
-  background: #fbfbfb;
-  margin-bottom: 20px;
-
-  @media screen and (max-width: 375px) {
+  .about-container {
     width: 335px;
-    margin-left: 24px;
+    margin: 20px auto;
+  }
+
+  .collapse-apropos {
+    .collapse-header {
+      height: 30px;
+      padding: 10px 12px;
+      border-radius: 5px;
+
+      h3 {
+        font-size: 13px;
+      }
+
+      span {
+        font-size: 18px;
+      }
+    }
+
+    .collapse-content {
+      font-size: 12px;
+      padding: 20px 12px;
+      line-height: 1.4;
+    }
   }
 }

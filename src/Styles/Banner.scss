@@ -37,13 +37,21 @@
 
 @media screen and (max-width: 375px) {
   .banner {
+    width: 335px;
     height: 111px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-
-    &-text {
-      font-size: 24px;
-      width: 90%;
-    }
+    margin: 0 12px;
+  }
+  .banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+    margin: 0 0 0 -35px;
+    font-size: 24px;
+    width: 225px;
+    text-align: start;
   }
 }
