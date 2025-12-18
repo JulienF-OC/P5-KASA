@@ -8,20 +8,20 @@
     object-fit: cover;
     border-radius: 20px;
   }
-} // ← Accolade manquante !
+}
 
 .apropos-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 20px;
-} // ← Accolade manquante !
+}
 
 @media screen and (max-width: 375px) {
   .about {
     width: 100%;
     padding: 0;
-    margin-top: 0;
+    margin: 0;
 
     img {
       width: 335px;
@@ -30,12 +30,18 @@
     }
   }
 
-  .about-container {
+  .apropos-container {
     width: 335px;
-    margin: 20px auto;
+    margin: 20px auto 0 auto;
   }
 
   .collapse-apropos {
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
     .collapse-header {
       height: 30px;
       padding: 10px 12px;

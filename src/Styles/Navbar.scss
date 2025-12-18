@@ -35,8 +35,8 @@
 
 @media screen and (max-width: 375px) {
   .navbar {
-    width: 100%;
-    gap: 10px;
+    width: 335px;
+    gap: 0px;
 
     &_logo {
       width: 145px;
@@ -45,13 +45,15 @@
       img {
         width: 145px;
         margin: 0;
+        height: 53px;
       }
     }
 
     a {
-      font-size: 14px;
+      font-size: 12px;
       margin-top: 0;
       width: 85px;
+      text-transform: uppercase;
     }
   }
 }
