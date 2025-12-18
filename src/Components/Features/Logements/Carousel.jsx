@@ -19,11 +19,36 @@ function Carousel({ pictures }) {
       <img src={pictures[current]} alt={`Slide ${current + 1}`} />
       {pictures.length > 1 && (
         <>
-          <button className="carousel-prev" onClick={prev}>
-            ‹
+          <button
+            className="carousel-prev"
+            onClick={prev}
+            aria-label="Previous image"
+          >
+            <svg width="128" height="128" viewBox="0 0 24 24" fill="none">
+              <path
+                d="M15 18l-6-6 6-6"
+                stroke="currentColor"
+                strokeWidth="1.2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
           </button>
-          <button className="carousel-next" onClick={next}>
-            ›
+
+          <button
+            className="carousel-next"
+            onClick={next}
+            aria-label="Next image"
+          >
+            <svg width="128" height="128" viewBox="0 0 24 24" fill="none">
+              <path
+                d="M9 6l6 6-6 6"
+                stroke="currentColor"
+                strokeWidth="1.2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
           </button>
           <span className="carousel-counter">
             {current + 1}/{pictures.length}

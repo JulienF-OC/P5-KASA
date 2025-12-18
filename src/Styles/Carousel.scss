@@ -21,7 +21,7 @@
   color: white;
   border: none;
   font-size: 9rem;
-  padding: 5px 10px;
+  padding: 5px 0px;
   cursor: pointer;
 }
 
@@ -67,5 +67,11 @@
     font-size: 3rem;
     padding: 0px 0px;
     cursor: pointer;
+  }
+  .carousel-prev svg,
+  .carousel-next svg {
+    width: 64px;
+    height: 64px;
+    stroke-width: 1;
   }
 }
