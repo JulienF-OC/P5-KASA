@@ -1,9 +1,12 @@
 .about {
-  width: 1240px;
+  max-width: 1240px;
+  width: 95%;
   margin: 50px auto;
+  padding: 0 20px;
 
   img {
-    width: 1240px;
+    width: 100%;
+    max-width: 1240px;
     height: 223px;
     object-fit: cover;
     border-radius: 20px;
@@ -15,6 +18,24 @@
   flex-direction: column;
   align-items: center;
   margin-bottom: 20px;
+  max-width: 1023px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  .about {
+    width: 100%;
+    padding: 0 15px;
+
+    img {
+      height: 180px;
+    }
+  }
+
+  .apropos-container {
+    width: 95%;
+  }
 }
 
 @media screen and (max-width: 375px) {
@@ -24,15 +45,18 @@
     margin: 0;
 
     img {
-      width: 335px;
+      width: 100%;
+      max-width: 335px;
       height: 111px;
       border-radius: 10px;
     }
   }
 
   .apropos-container {
-    width: 335px;
+    width: 100%;
+    max-width: 335px;
     margin: 20px auto 0 auto;
+    padding: 0 20px;
   }
 
   .collapse-apropos {

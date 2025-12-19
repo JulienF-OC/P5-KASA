@@ -1,59 +1,71 @@
 .navbar {
   display: flex;
   align-items: center;
-  gap: 90px;
-  color: #000;
-  width: 1240px;
+  justify-content: space-between;
+  max-width: 1240px;
+  width: 100%;
   margin: 0 auto;
+  padding: 40px 20px 0 20px;
+  gap: 75px;
 
   a {
     text-decoration: none;
     color: #000;
-    margin-top: 60px;
     cursor: pointer;
     font-weight: 500;
-    font-size: 22px;
+    font-size: 24px;
     font-family: "Montserrat", sans-serif;
+    transition: text-decoration 0.2s ease;
+
+    &:hover {
+      text-decoration: underline;
+    }
 
     &.active {
-      color: #000;
       text-decoration: underline;
     }
   }
 
   &_logo {
+    display: flex;
+    align-items: center;
     margin-right: auto;
-    width: 210px;
-    height: 68px;
-    margin-top: 30px;
 
     img {
-      margin-left: -20px;
+      width: 210px;
+      height: auto;
     }
+  }
+
+  nav {
+    display: flex;
+    gap: 60px;
   }
 }
 
 @media screen and (max-width: 375px) {
   .navbar {
-    width: 335px;
-    gap: 0px;
-
-    &_logo {
-      width: 145px;
-      margin-top: 0;
-
-      img {
-        width: 145px;
-        margin: 0;
-        height: 53px;
-      }
-    }
+    width: 100%;
+    max-width: 335px;
+    padding: 20px 20px 0 20px;
+    gap: 0;
 
     a {
       font-size: 12px;
-      margin-top: 0;
-      width: 85px;
       text-transform: uppercase;
+    }
+
+    nav {
+      gap: 20px;
+    }
+
+    &_logo {
+      margin-right: 0;
+      margin-left: -25px;
+    }
+    img {
+      width: 145px;
+      height: auto;
     }
   }
 }

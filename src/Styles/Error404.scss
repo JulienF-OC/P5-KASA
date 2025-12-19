@@ -1,6 +1,10 @@
 .error-content {
   display: flex;
   flex-direction: column;
+  max-width: 1240px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 40px 20px;
 
   .error-nbr {
     font-size: 288px;
@@ -8,16 +12,18 @@
     font-weight: 700;
     font-family: "Montserrat", sans-serif;
     align-self: center;
+    line-height: 1;
+    margin: 0;
   }
 
   .error-msg {
     align-self: center;
-    margin-bottom: 60px;
+    margin: 70px 0 60px 0;
     color: #ff6060;
     font-size: 36px;
     font-weight: 500;
     font-family: "Montserrat", sans-serif;
-    margin-top: 70px;
+    text-align: center;
   }
 
   .mobile-break {
@@ -27,17 +33,23 @@
   .home-page {
     text-decoration: underline;
     color: #000;
-    margin-top: 60px;
     cursor: pointer;
     font-weight: 500;
     font-size: 18px;
     font-family: "Montserrat", sans-serif;
     align-self: center;
     margin-bottom: 115px;
-  }
+    transition: opacity 0.2s ease;
 
-  @media screen and (max-width: 375px) {
-    margin-top: 70px;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .error-content {
+    padding: 70px 20px 20px 20px;
 
     .error-nbr {
       font-size: 96px;
@@ -46,6 +58,9 @@
     .error-msg {
       font-size: 18px;
       text-align: center;
+      margin: 30px 0;
+      width: 100%;
+      max-width: 260px;
     }
 
     .mobile-break {
@@ -54,9 +69,10 @@
 
     .home-page {
       font-size: 14px;
-      width: 221px;
+      width: 100%;
+      max-width: 221px;
       text-align: center;
-      height: 20px;
+      margin-bottom: 60px;
     }
   }
 }

@@ -1,10 +1,11 @@
 .banner {
   position: relative;
   width: 100%;
+  max-width: 1240px;
   height: 223px;
   border-radius: 25px;
   overflow: hidden;
-  margin-bottom: 40px;
+  margin: 0 auto 40px auto;
 
   &-img {
     width: 100%;
@@ -27,6 +28,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
+    font-size: 48px;
     font-weight: 500;
     font-family: "Montserrat", sans-serif;
     text-align: center;
@@ -35,23 +37,35 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .banner {
+    height: 180px;
+    border-radius: 15px;
+    margin: 0 20px 30px 20px;
+
+    &-text {
+      font-size: 36px;
+    }
+  }
+}
+
 @media screen and (max-width: 375px) {
   .banner {
-    width: 335px;
+    width: 100%;
+    max-width: 335px;
     height: 111px;
-    margin: 0 12px;
+    margin: 0 auto 20px auto;
+    border-radius: 10px;
   }
+
   .banner-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-weight: 700;
-    font-family: "Montserrat", sans-serif;
-    margin: 0 0 0 -35px;
     font-size: 24px;
-    width: 225px;
-    text-align: start;
+    font-weight: 500;
+    width: 90%;
+    max-width: 225px;
+    text-align: left;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    margin: 0;
   }
 }

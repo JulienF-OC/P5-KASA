@@ -1,16 +1,17 @@
 .rating {
   display: flex;
-  gap: 5px;
-  margin-top: 40px;
+  gap: 10px;
+  align-items: center;
 
   .star {
     display: inline-block;
     width: auto;
     height: 36px;
-    font-size: 28px;
+    font-size: 30px;
     line-height: 36px;
     text-align: center;
-    color: lightgray;
+    color: #e3e3e3;
+    transition: color 0.2s ease;
 
     &.filled {
       color: #ff6060;
@@ -18,14 +19,25 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .rating {
+    gap: 8px;
+
+    .star {
+      height: 24px;
+      font-size: 24px;
+      line-height: 24px;
+    }
+  }
+}
+
 @media screen and (max-width: 375px) {
   .rating {
-    margin-top: 0;
-    gap: 3px;
+    gap: 5px;
 
     .star {
       height: 18px;
-      font-size: 20px;
+      font-size: 18px;
       line-height: 18px;
     }
   }
