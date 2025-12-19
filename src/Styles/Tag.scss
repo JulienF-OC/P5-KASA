@@ -17,18 +17,6 @@
   display: inline-block;
 }
 
-@media screen and (max-width: 768px) {
-  .logement-tags {
-    gap: 8px;
-    margin-top: 15px;
-  }
-
-  .tag {
-    font-size: 12px;
-    padding: 4px 15px;
-  }
-}
-
 @media screen and (max-width: 375px) {
   .logement-tags {
     gap: 10px;

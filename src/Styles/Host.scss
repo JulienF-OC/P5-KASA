@@ -68,23 +68,6 @@
   }
 }
 
-@media screen and (max-width: 768px) {
-  .logement-header {
-    padding: 0 15px;
-    gap: 20px;
-  }
-
-  .logement-info {
-    h1 {
-      font-size: 28px;
-    }
-
-    p {
-      font-size: 16px;
-    }
-  }
-}
-
 @media screen and (max-width: 375px) {
   .logement-header {
     flex-direction: column;

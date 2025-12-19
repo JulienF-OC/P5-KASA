@@ -51,23 +51,6 @@
   font-family: "Montserrat", sans-serif;
 }
 
-@media screen and (max-width: 768px) {
-  .carousel {
-    height: 300px;
-    margin: 20px auto;
-
-    img {
-      height: 300px;
-      border-radius: 15px;
-    }
-  }
-
-  .carousel-prev,
-  .carousel-next {
-    font-size: 6rem;
-  }
-}
-
 @media screen and (max-width: 375px) {
   .carousel {
     width: 100%;
@@ -87,8 +70,8 @@
     padding: 0;
 
     svg {
-      width: 24px;
-      height: 24px;
+      width: 40px;
+      height: 40px;
       stroke-width: 1;
     }
   }

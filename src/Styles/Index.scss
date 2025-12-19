@@ -6,11 +6,26 @@ html,
 body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
-  max-width: 100%;
+  height: auto;
 }
 
 #root {
-  overflow-x: hidden;
-  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+
+.main-content {
+  flex: none;
+  height: auto;
+  min-height: auto;
+}
+
+footer {
+  flex-shrink: 0;
 }
