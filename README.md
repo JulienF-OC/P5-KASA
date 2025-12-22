@@ -1,16 +1,34 @@
-# React + Vite
+# Projet OpenClassrooms – Application React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Ce projet a été réalisé dans le cadre de la formation **Développeur Web** proposée par **OpenClassrooms**.
 
-Currently, two official plugins are available:
+L’application est développée avec **React** et **React Router**, et a été **initialisée à l’aide de Create React App**, conformément aux consignes du projet.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## Contexte du projet
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+L’objectif de ce projet est de :
+- Découvrir et utiliser React
+- Créer une application web dynamique basée sur des composants
+- Mettre en place une navigation avec React Router
+- Structurer correctement un projet frontend
+- Gérer un layout responsive avec un header, un contenu principal et un footer
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+##  Technologies utilisées
+
+- React
+- Create React App
+- React Router DOM
+- SCSS
+
+---
+
+##  Initialisation du projet
+
+Le projet a été initialisé avec **Create React App** à l’aide de la commande suivante :
+
+```bash
+npx create-react-app nom-du-projet
