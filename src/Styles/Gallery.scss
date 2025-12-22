@@ -26,19 +26,6 @@
   }
 }
 
-@media screen and (max-width: 768px) {
-  .gallery-container {
-    width: 100%;
-    margin: 40px auto;
-    padding: 0 15px;
-  }
-
-  .gallery {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-    padding: 25px;
-  }
-}
 
 @media screen and (max-width: 375px) {
   .gallery-container {

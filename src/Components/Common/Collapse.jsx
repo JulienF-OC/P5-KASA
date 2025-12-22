@@ -1,4 +1,3 @@
-// components/common/Collapse.jsx
 import React, { useState, useRef, useEffect } from "react";
 import "../../Styles/Collapse.scss";
 
