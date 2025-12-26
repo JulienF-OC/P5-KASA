@@ -1,34 +1,29 @@
-# Projet OpenClassrooms – Application React
+# Kasa
 
-Ce projet a été réalisé dans le cadre de la formation **Développeur Web** proposée par **OpenClassrooms**.
+Application web de location d'appartements entre particuliers, développée avec React.
 
-L’application est développée avec **React** et **React Router**, et a été **initialisée à l’aide de Create React App**, conformément aux consignes du projet.
-
----
-
-## Contexte du projet
-
-L’objectif de ce projet est de :
-- Découvrir et utiliser React
-- Créer une application web dynamique basée sur des composants
-- Mettre en place une navigation avec React Router
-- Structurer correctement un projet frontend
-- Gérer un layout responsive avec un header, un contenu principal et un footer
-
----
-
-##  Technologies utilisées
+## Technologies utilisées
 
 - React
-- Create React App
-- React Router DOM
+- React Router
 - SCSS
 
----
+## Installation
 
-##  Initialisation du projet
-
-Le projet a été initialisé avec **Create React App** à l’aide de la commande suivante :
+Clonez le projet et installez les dépendances :
 
 ```bash
-npx create-react-app nom-du-projet
+npm install
+```
+
+## Lancement du projet
+
+Pour démarrer le serveur de développement :
+
+```bash
+npm run dev
+```
+
+L'application sera accessible à l'adresse indiquée dans le terminal (généralement `http://localhost:5173` pour Vite ou `http://localhost:3000` pour Create React App).
+
+## Projet réalisé dans le cadre de la formation OpenClassrooms "Développeur d'application - JavaScript React"
