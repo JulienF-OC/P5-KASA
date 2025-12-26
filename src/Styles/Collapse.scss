@@ -37,8 +37,11 @@
     .arrow {
       font-size: 24px;
       font-weight: bold;
-      transition: transform 0.3s ease;
+      transition: transform 0.7s ease;
       display: inline-block;
+      width: 32px;
+      height: 32px;
+      transform: translateY(5px);
 
       &.open {
         transform: rotate(180deg);
