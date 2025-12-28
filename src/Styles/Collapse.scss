@@ -38,13 +38,12 @@
       font-size: 24px;
       font-weight: bold;
       transition: transform 0.7s ease;
-      display: inline-block;
-      width: 32px;
-      height: 32px;
-      transform: translateY(5px);
+      display: flex;
+      width: 16px;
+      height: 8px;
 
       &.open {
-        transform: rotate(180deg);
+        transform: rotate(-180deg);
       }
     }
   }

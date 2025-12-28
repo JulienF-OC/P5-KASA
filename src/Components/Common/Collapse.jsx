@@ -23,9 +23,9 @@ function Collapse({ title, content }) {
       <div className="collapse-header" onClick={toggle}>
         <h3>{title}</h3>
         <span className={`arrow ${isOpen ? "open" : ""}`}>
-          <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+          <svg width="16" height="8" viewBox="0 0 16 8" fill="none">
             <path
-              d="M8 14l8-8 8 8"
+              d="M2 7l6-6 6 6"
               stroke="currentColor"
               strokeWidth="3"
               strokeLinecap="round"
