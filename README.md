@@ -26,4 +26,4 @@ npm run dev
 
 L'application sera accessible à l'adresse indiquée dans le terminal (généralement `http://localhost:5173` pour Vite ou `http://localhost:3000` pour Create React App).
 
-## Projet réalisé dans le cadre de la formation OpenClassrooms "Développeur d'application - JavaScript React"
+## Projet réalisé dans le cadre de la formation OpenClassrooms "Développeur Web"
