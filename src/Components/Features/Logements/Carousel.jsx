@@ -4,19 +4,28 @@ import "../../../Styles/Carousel.scss";
 function Carousel({ pictures }) {
   const [current, setCurrent] = useState(0);
 
+  if (!pictures || pictures.length === 0) return null;
+
   const next = () => {
-    setCurrent((prev) => (prev + 1) % pictures.length);
+    if (current < pictures.length - 1) {
+      setCurrent(current + 1);
+    } else {
+      setCurrent(0);
+    }
   };
 
   const prev = () => {
-    setCurrent((prev) => (prev - 1 + pictures.length) % pictures.length);
+    if (current > 0) {
+      setCurrent(current - 1);
+    } else {
+      setCurrent(pictures.length - 1);
+    }
   };
-
-  if (!pictures || pictures.length === 0) return null;
 
   return (
     <div className="carousel">
       <img src={pictures[current]} alt={`Slide ${current + 1}`} />
+
       {pictures.length > 1 && (
         <>
           <button
@@ -50,6 +59,7 @@ function Carousel({ pictures }) {
               />
             </svg>
           </button>
+
           <span className="carousel-counter">
             {current + 1}/{pictures.length}
           </span>

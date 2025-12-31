@@ -37,10 +37,9 @@
     .arrow {
       font-size: 24px;
       font-weight: bold;
-      transition: transform 0.7s ease;
+      transition: transform 0.3s ease;
       display: flex;
-      width: 16px;
-      height: 8px;
+      min-width: 24px;
 
       &.open {
         transform: rotate(-180deg);
@@ -70,6 +69,12 @@
       }
     }
   }
+}
+
+svg {
+  width: 100%;
+  height: auto;
+  max-width: 24px;
 }
 
 .collapse-container {
@@ -117,6 +122,12 @@
     }
   }
 
+  svg {
+    width: 100%;
+    height: auto;
+    max-width: 16px;
+  }
+
   .collapse-container {
     width: 100%;
     max-width: 335px;
@@ -139,6 +150,13 @@
     .collapse-content {
       font-size: 12px;
       padding: 15px 10px;
+    }
+    .collapse-apropos {
+      margin-bottom: 10px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
   }
 }

@@ -27,7 +27,7 @@ function Collapse({ title, content }) {
             <path
               d="M2 7l6-6 6 6"
               stroke="currentColor"
-              strokeWidth="3"
+              strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"
             />

@@ -43,32 +43,4 @@
     margin: 20px auto 0 auto;
     padding: 0 20px;
   }
-
-  .collapse-apropos {
-    margin-bottom: 10px;
-
-    &:last-child {
-      margin-bottom: 0;
-    }
-
-    .collapse-header {
-      height: 30px;
-      padding: 10px 12px;
-      border-radius: 5px;
-
-      h3 {
-        font-size: 13px;
-      }
-
-      span {
-        font-size: 18px;
-      }
-    }
-
-    .collapse-content {
-      font-size: 12px;
-      padding: 20px 12px;
-      line-height: 1.4;
-    }
-  }
 }
