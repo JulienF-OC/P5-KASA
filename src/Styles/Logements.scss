@@ -1,8 +1,80 @@
 .logement-page {
   margin-top: 45px;
 }
+
+.logement-collapse {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  max-width: 1240px;
+  width: 100%;
+  gap: 76px;
+  margin: 30px auto 40px auto;
+}
+
+.logement-header {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1240px;
+  width: 100%;
+  margin: 30px auto 0 auto;
+  padding: 0 20px;
+  gap: 40px;
+}
+
+.logement-info {
+  flex: 1;
+
+  h1 {
+    color: #ff6060;
+    font-size: 36px;
+    font-family: "Montserrat", sans-serif;
+    margin: 0 0 10px 0;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+
+  p {
+    margin: 0 0 20px 0;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    color: #000;
+  }
+}
+
 @media screen and (max-width: 375px) {
   .logement-page {
     margin-top: -10px;
+  }
+
+  .logement-collapse {
+    flex-direction: column;
+    width: 100%;
+    max-width: 335px;
+    margin: 20px auto;
+    gap: 0px;
+    padding: 0;
+    margin-bottom: 40px;
+  }
+
+  .logement-header {
+    flex-direction: column;
+    width: 100%;
+    margin: 20px auto 0 5px;
+    padding: 0 20px;
+    gap: 15px;
+  }
+
+  .logement-info {
+    h1 {
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+
+    p {
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
   }
 }

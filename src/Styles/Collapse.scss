@@ -1,21 +1,4 @@
-.logement-collapse {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  max-width: 1240px;
-  width: 100%;
-  gap: 76px;
-  margin: 30px auto 40px auto;
-}
-
 .collapse {
-  margin-top: 20px;
-  border-radius: 5px;
-  width: 100%;
-  max-width: 582px;
-  background: #f6f6f6;
-  margin-bottom: 20px;
-
   &-header {
     display: flex;
     justify-content: space-between;
@@ -50,6 +33,7 @@
   &-content {
     transition: max-height 0.3s ease;
     overflow: hidden;
+    background: #fbfbfb;
 
     .collapse-inner {
       padding: 20px 15px;
@@ -71,7 +55,7 @@
   }
 }
 
-svg {
+.svg-collapse {
   width: 100%;
   height: auto;
   max-width: 24px;
@@ -82,22 +66,12 @@ svg {
   border-radius: 5px;
   max-width: 1023px;
   width: 100%;
-  background: #fbfbfb;
   margin: 30px auto;
   padding: 0 20px;
+  background: transparent;
 }
 
 @media screen and (max-width: 375px) {
-  .logement-collapse {
-    flex-direction: column;
-    width: 100%;
-    max-width: 335px;
-    margin: 20px auto;
-    gap: 0px;
-    padding: 0;
-    margin-bottom: 40px;
-  }
-
   .collapse {
     max-width: 100%;
 
@@ -115,6 +89,7 @@ svg {
     }
 
     &-content {
+      background: transparent;
       .collapse-inner {
         font-size: 12px;
         padding: 15px 10px;
@@ -133,6 +108,7 @@ svg {
     max-width: 335px;
     padding: 0;
     margin-bottom: -30px;
+    background: transparent;
 
     .collapse-header {
       padding: 0px 12px;

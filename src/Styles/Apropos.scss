@@ -1,8 +1,8 @@
 .about {
   max-width: 1240px;
   width: 95%;
-  margin: 50px auto;
-  padding: 0 20px;
+  margin: 50px auto 0 auto;
+  padding: 0 20px 0 20px;
 
   img {
     width: 100%;
@@ -17,10 +17,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   max-width: 1023px;
   width: 90%;
   margin: 0 auto;
+  padding-bottom: 0;
 }
 
 @media screen and (max-width: 375px) {
@@ -34,6 +35,8 @@
       max-width: 335px;
       height: 111px;
       border-radius: 10px;
+      margin: 0 auto;
+      display: block;
     }
   }
 
@@ -41,6 +44,7 @@
     width: 100%;
     max-width: 335px;
     margin: 20px auto 0 auto;
-    padding: 0 20px;
+    padding: 0 20px 20px 20px;
+    margin-bottom: 0;
   }
 }
