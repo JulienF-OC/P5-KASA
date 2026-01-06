@@ -3,7 +3,7 @@ import "../Styles/Apropos.scss";
 import Banner from "../Components/Common/Banner";
 import Collapse from "../Components/Common/Collapse";
 import data from "../data/apropos.json";
-import bannerImage from "../assets/images/banner-apropos.jpg";
+import bannerImage from "../assets/images/banner-apropos.png";
 
 function About() {
   return (
