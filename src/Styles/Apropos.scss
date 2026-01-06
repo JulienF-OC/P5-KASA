@@ -24,6 +24,10 @@
   padding-bottom: 0;
 }
 
+.about .banner-overlay {
+  display: none;
+}
+
 @media screen and (max-width: 375px) {
   .about {
     width: 100%;
